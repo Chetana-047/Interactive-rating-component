@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.5;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Medium-Grey-opacity: hsla(216, 12%, 54%, 0.15);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Dark-Blue-opacity: hsla(213, 19%, 18%, 0.5);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Very-Dark-Blue-opacity: hsla(216, 12%, 8%, 0.5);
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+}
+
+
+/* Main*/
+
+main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    width: 80%;
+    /* height: 523px; */
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    padding: 40px;
+    position: relative;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    /* display: flex; */
+}
+
+
+/* .box-icon {
+  
+    display: inline-block;
+    margin-bottom: 35px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: var(--Medium-Grey-opacity);
+    color: var(--Orange);
+} */
+
+.box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 35px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--Medium-Grey-opacity);
+    color: var(--Orange);
+}
+
+.box h1 {
+    color: var(--White);
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: var(--Light-Grey);
+    margin-bottom: 30px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ratings li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ratings li a {
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--Medium-Grey-opacity);
+    color: var(--Light-Grey);
+}
+
+
+/* .ratings li a {
+    text-decoration: none;
+    color: var(--Light-Grey);
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: var(--Medium-Grey-opacity);
+    text-align: center;
+} */
+
+.rating-btn {
+    width: 100%;
+    border-radius: 25px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Orange);
+    color: var(--White);
+    letter-spacing: 1.5px;
+    transition: color 0.3s linear;
+}
+
+.ratings li a:hover {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.ratings li a:focus {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.rating-btn:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+/* box number 2*/
+
+.box2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--Dark-Blue);
+    overflow: hidden;
+    border-radius: 15px;
+    color: var(--White);
+    text-align: center;
+    font-weight: 300;
+    /* transition: transform 0.2s linear; */
+}
+
+.moved {
+    transform: translateY(-1000px);
+}
+
+.inner-box {
+    padding: 40px;
+    background-color: var(--Dark-Blue);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-box-img {
+    margin-bottom: 25px;
+}
+
+.rating-result {
+    padding: 10px 15px;
+    background-color: var(--Medium-Grey-opacity);
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.rating-result p {
+    color: var(--Orange);
+}
+
+.attribution {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .card {
+        width: 35%;
+    }
+}
