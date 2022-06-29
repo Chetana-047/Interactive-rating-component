@@ -44,7 +44,7 @@ main {
 }
 
 .card {
-    width: 80%;
+    width: 90%;
     /* height: 523px; */
     background-color: var(--Dark-Blue);
     border-radius: 15px;
@@ -104,6 +104,11 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-right: 5px;
+}
+
+.ratings li:last-child {
+    padding-right: 0;
 }
 
 .ratings li a {
@@ -211,9 +216,9 @@ main {
     padding: 10px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
     .card {
-        width: 70%;
+        width: 75%;
     }
 }
 
