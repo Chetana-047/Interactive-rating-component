@@ -15,6 +15,7 @@ ratings.addEventListener('click', function(e) {
 
         value = e.target.textContent;
         showRating.textContent = value;
+                ratingBtn.classList.add('clickable');
 
     }
 }, false);
