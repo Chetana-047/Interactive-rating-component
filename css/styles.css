@@ -143,6 +143,11 @@ main {
     color: var(--White);
     letter-spacing: 1.5px;
     transition: color 0.3s linear;
+        pointer-events: none;
+}
+
+.clickable {
+    pointer-events: visible;
 }
 
 .ratings li a:hover {
